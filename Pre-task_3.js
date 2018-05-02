@@ -19,6 +19,6 @@ function sortByPriority(obj) {
 	function(a, b) {
 	  return b[1]-a[1]; // compare numbers
 	});
-	return arr; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
+	return arr.map(i => i[0]); // list of property names sorted by priority (highest is on top)
 }
-alert( sortByPriority(values) );
+console.log( sortByPriority(values) );

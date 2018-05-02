@@ -163,7 +163,7 @@ exports.config = {
   jasmineNodeOpts: {
     //
     // Jasmine default timeout
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 100000
   },
   //
   // =====

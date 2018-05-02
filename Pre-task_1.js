@@ -17,5 +17,5 @@ arr.sort(compareNumbers);
 
 var mult = arr[0] * arr[1] * arr[2];
 
-alert( "Sorted array from max to min: \n" + arr );
-alert( "Multiply of 3 greatest values equals: \n" + mult );
+console.log( "Sorted array from max to min: \n" + arr );
+console.log( "Multiply of 3 greatest values equals: \n" + mult );

@@ -1,9 +1,9 @@
 'use strict';
 function countSecToday() {
 	var curr = new Date();
-	var today = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
-    var amount = curr - today;
+	var dayStart = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
+    var amount = curr - dayStart;
 	
 	return Math.round(amount / 1000);
 }
-alert( countSecToday() );
+console.log( countSecToday() + '\nThis is total amount of seconds starting from the beginning of today till now' );
