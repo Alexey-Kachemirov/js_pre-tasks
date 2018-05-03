@@ -1,8 +1,8 @@
 'use strict';
 function countSecToday() {
-	var curr = new Date();
-	var dayStart = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate());
-    var amount = curr - dayStart;
+	var currDate = new Date();
+	var dayStart = new Date(currDate.getFullYear(), currDate.getMonth(), currDate.getDate());
+    var amount = currDate - dayStart;
 	
 	return Math.round(amount / 1000);
 }

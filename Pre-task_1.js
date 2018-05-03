@@ -1,21 +1,20 @@
 'use strict';
 
-var arr = [];
-
 function createRandArr() {
+	var arrRand = [];
 	for (var i = 1; i <= 10; i++) {
-		arr.push((Math.floor(Math.random() * 100))+1);
+		arrRand.push((Math.floor(Math.random() * 100))+1);
 	}
+	return arrRand;
 }
 
 function compareNumbers(a, b) { 
 	return b - a;
 }
 
-createRandArr();
-arr.sort(compareNumbers);
+var arrSorted = createRandArr();
+arrSorted.sort(compareNumbers);
+var mult = arrSorted[0] * arrSorted[1] * arrSorted[2];
 
-var mult = arr[0] * arr[1] * arr[2];
-
-console.log( "Sorted array from max to min: \n" + arr );
+console.log( "Sorted array from max to min: \n" + arrSorted );
 console.log( "Multiply of 3 greatest values equals: \n" + mult );

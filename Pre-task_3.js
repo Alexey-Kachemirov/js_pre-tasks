@@ -10,9 +10,9 @@ var values = {
 function sortByPriority(obj) {
   // convert object into array
 	var arr = [];
-	for(var key in values)
-		if(values.hasOwnProperty(key))
-			arr.push([key, values[key]]); // each item is an array in format [key, value]
+	for(var key in obj)
+		if(obj.hasOwnProperty(key))
+			arr.push([key, obj[key]]); // each item is an array in format [key, value]
 	
 	// sort items by value
 	arr.sort(
@@ -21,4 +21,4 @@ function sortByPriority(obj) {
 	});
 	return arr.map(i => i[0]); // list of property names sorted by priority (highest is on top)
 }
-console.log( sortByPriority(values) );
+console.log( "List of property names sorted by priority:\n" + sortByPriority(values) );
